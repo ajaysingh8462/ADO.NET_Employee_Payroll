@@ -11,8 +11,9 @@ namespace Employee_Payroll
     {
         public static void Main(string[] args)
         {
-            Data_Base data= new Data_Base();
-            data.CreateDatabass();
+            //Data_Base data= new Data_Base();
+            //data.CreateDatabass();
+            Table.CreateTable();
         }
     }
 }
