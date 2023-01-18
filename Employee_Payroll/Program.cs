@@ -14,7 +14,7 @@ namespace Employee_Payroll
             //Data_Base data= new Data_Base();
             //data.CreateDatabass();
             //Table.CreateTable();
-            Console.WriteLine("Enter Option\n1.Insert Details\n2.Retrive data from database ");
+            Console.WriteLine("Enter Option\n1.Insert Details\n2.Retrive data from database\n3.Update Basic Pay ");
             int op = Convert.ToInt32(Console.ReadLine());
             while (true)
             {
@@ -49,6 +49,12 @@ namespace Employee_Payroll
                     case 2:
                         Display ds = new Display();
                         ds.DisplayEmployeeDetails();
+                        break;
+                    case 3:
+                        UpdateDetails up = new UpdateDetails();
+                        Console.WriteLine("Enter Name which basic pay you want to update");
+                        string name = Console.ReadLine();
+                        up.UpdateBasicPay(name);
                         break;
                 }
                 break;

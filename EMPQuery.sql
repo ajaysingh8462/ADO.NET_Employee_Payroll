@@ -11,4 +11,14 @@ End
 
 select *from EmployepayrollTable
 
+Create proc UpdateDetails
+(
+@Name varchar(200) 
+)
+as
+begin
+Update EmployepayrollTable set Basic_Pay=300000 where Name=@Name
+end
+
+
 
