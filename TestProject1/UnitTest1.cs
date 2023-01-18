@@ -10,7 +10,8 @@ namespace TestProject1
         {
             UpdateDetails up = new UpdateDetails();
             string name = "Terisa";
-            string actual = up.UpdateBasicPay(name);
+            double basic_Pay = 30000;
+            string actual = up.UpdateBasicPay(name,basic_Pay);
             string expected = "Updated!";
             Assert.AreEqual(expected, actual);
 

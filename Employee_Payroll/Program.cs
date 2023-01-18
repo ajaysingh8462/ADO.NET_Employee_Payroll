@@ -54,7 +54,9 @@ namespace Employee_Payroll
                         UpdateDetails up = new UpdateDetails();
                         Console.WriteLine("Enter Name which basic pay you want to update");
                         string name = Console.ReadLine();
-                        up.UpdateBasicPay(name);
+                        Console.WriteLine("Enter Basic_Pay");
+                        double basic_Pay = Convert.ToDouble(Console.ReadLine());
+                        up.UpdateBasicPay(name, basic_Pay);
                         break;
                 }
                 break;
